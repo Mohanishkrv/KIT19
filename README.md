@@ -11,8 +11,17 @@ This project has been configured with SQL Server with KIT database.
 Database columns are Id(Auto generated), Product Name, Size, Price, Mfg Date, Category.
 Entity Framework has been used to seed and create the SQL Database.
 Check Readme File for more details.
+
+Install Below Nugget Packages:
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tool
+
 #### Appsettings.json
 "ConnectionStrings": {
   "ProductConnectionString": "server=ZENO-SAMA\\SQLEXPRESS; database=KIT;TrustServerCertificate=true;Trusted_connection=true"
 }
 Change the Server with your local Server
+
+In Package Manager Console (VS2022)
+Add-Migration "Initial Migration"
+Update-Database
