@@ -1,0 +1,34 @@
+﻿@model KIT19.Models.AddProductViewModel
+
+<h1>Add Product</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Product of Name</label>
+        <input type="text" class="form-control" asp-for="ProductName">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Size Of Product</label>
+        <select class="form-select" asp-for="ProductSize">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Price of Product</label>
+        <input type="number" class="form-control" asp-for="Price">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Mfg Date of Product</label>
+        <input type="date" class="form-control" asp-for="MfgDate">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Category of Product</label>
+        <select class="form-select" asp-for="Category">
+            <option value="Premium">Premium</option>
+            <option value="Standard">Standard</option>
+            <option value="Economy">Economy</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
